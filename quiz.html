@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="quiz.css" />
+    <title>Web Design Mastery | HealthCare</title>
+  </head>
+  <body>
+
+     <div class="wrapper">
+        <div class="wrap" id="q1">
+            <div class="text-center pb-4">
+                <div class="h5 font-weight-bold"><span id="number"> </span>1 of 3 </div>
+            </div>
+            <div class="h4 font-weight-bold"> 1. Who is the Prime Minister of India?</div>
+            <br>
+            <div class="pt-4">
+                <form> <label class="options">Rahul Gandhi <input type="radio" name="radio"> <span class="checkmark"></span> </label> <label class="options">Indira Gandhi <input type="radio" name="radio"> <span class="checkmark"></span> </label> <label class="options">Narendra Modi <input type="radio" name="radio" id="rd" checked> <span class="checkmark"></span> </label> <label class="options">Ram Nath Kovind <input type="radio" name="radio"> <span class="checkmark"></span> </label> </form>
+            </div>
+            <div class="d-flex justify-content-end pt-2"> <button class="btn btn-primary" id="next1">Next <span class="fas fa-arrow-right"></span> </button> </div>
+        </div>
+        <div class="wrap" id="q2">
+            <div class="text-center pb-4">
+                <div class="h5 font-weight-bold"> <span id="number"> </span>2 of 3 </div>
+            </div>
+            <div class="h4 font-weight-bold"> 2. IPV4 stand's for?</div>
+            <div class="pt-4">
+                <form> <label class="options">Internet Protocol <input type="radio" name="radio"> <span class="checkmark"></span> </label> <label class="options">Intranet Protocol <input type="radio" name="radio" checked> <span class="checkmark"></span> </label> <label class="options">internet Protocol <input type="radio" name="radio" id="rd"> <span class="checkmark"></span> </label> <label class="options">None of the above <input type="radio" name="radio"> <span class="checkmark"></span> </label> </form>
+            </div>
+            <div class="d-flex justify-content-end pt-2"> <button class="btn btn-primary mx-3" id="back1"> <span class="fas fa-arrow-left pr-1"></span>Previous </button> <button class="btn btn-primary" id="next2">Next <span class="fas fa-arrow-right"></span> </button> </div>
+        </div>
+        <div class="wrap" id="q3">
+            <div class="text-center pb-4">
+                <div class="h5 font-weight-bold"> <span id="number"> </span>3 of 3 </div>
+            </div>
+            <div class="h4 font-weight-bold"> 3. What is the full form of CSS?</div>
+            <div class="pt-4">
+                <form> <label class="options">Clarity Style Sheets <input type="radio" name="radio"> <span class="checkmark"></span> </label> <label class="options">Cascading Style Sheets <input type="radio" name="radio"> <span class="checkmark"></span> </label> <label class="options">Confirm Style sheets <input type="radio" name="radio" id="rd" checked> <span class="checkmark"></span> </label> <label class="options">Canvas Style Sheets <input type="radio" name="radio"> <span class="checkmark"></span> </label> </form>
+            </div>
+            <div class="d-flex justify-content-end pt-2"> <button class="btn btn-primary mx-3" id="back2"> <span class="fas fa-arrow-left pr-2"></span>Previous </button> <button class="btn btn-primary" id="next3" onclick="location.href='login.html';" >Submit </button> </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
