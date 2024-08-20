@@ -106,7 +106,7 @@ header {
       rgba(18, 172, 142, 0.9),
       rgba(0, 0, 0, 0.7)
     ),
-    url("assets/background.jpg");
+    url("assets/header.jpg");
   background-position: center center;
   background-size: cover;
   
