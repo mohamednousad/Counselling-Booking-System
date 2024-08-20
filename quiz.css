@@ -12,21 +12,33 @@ body{
         rgba(18, 172, 142, 0.9),
         rgba(0, 0, 0, 0.7)
       ),
-      url("assets/background.jpg");
+      url("assets/header.jpg");
       background-size: cover;
+      max-width: 1200px;
+      
       
 }
 
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
 .wrapper{max-width: 600px;
-    margin: 80px auto 50px
-    ;padding: 30px;
+    margin: 170px auto ;
+    padding: 30px;
     border-radius: 20px;
     background: #f3f8f8;
     position: relative;
     min-height: 400px;
-    overflow: hidden}
+    overflow: hidden;
     
-.wrapper .wrap{width: 500px;position: absolute;left: 50px;transition: 0.6s}
+    
+}
+    
+.wrapper .wrap{width: 400px;position: absolute;left: 50px;transition: 0.6s}
     
 #q2, #q3{left: 650px}
     
