@@ -1,51 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-
 
 :root {
-  --primary-color: #00c59e;
+  --primary-color: #12ac8e;
   --primary-color-dark: #0d846c;
   --primary-color-light: #e9f7f7;
-  --secondary-color: #FF7900;
+  --secondary-color: #fb923c;
   --text-dark: #333333;
   --text-light: #767268;
-  --primary-color-gray:rgb(169, 169, 169);
   --white: #ffffff;
   --max-width: 1200px;
 }
-
-.navbar-main {
-  background-color: transparent;
-}
-.navbar-brand  {
-  color: white;
-  padding: 10px;
-  font-weight: 600;
-  border-radius: 5px;
-
-  
-  
-}
-
-.nav-item {
-  padding: 10px;
-}
-.nav-link {
-  font-size: 20px;
-  font-weight: 600;
-  
-
-}
-
-#selected {
-  background-color: #ffffff
-}
-
-.nav-link:hover {
-  background-color: #ffffff ;
-  
-}
-
 
 * {
   padding: 0;
@@ -53,14 +17,10 @@
   box-sizing: border-box;
 }
 
-body {
- 
-}
-
 .section__container {
   max-width: var(--max-width);
   margin: auto;
-  padding: 1rem 1rem;
+  padding: 5rem 1rem;
 }
 
 .section__header {
@@ -70,7 +30,7 @@ body {
   color: var(--text-dark);
 }
 
-.button {
+.btn {
   padding: 0.75rem 2rem;
   outline: none;
   border: none;
@@ -104,14 +64,47 @@ header {
   background-image: linear-gradient(
       to right,
       rgba(18, 172, 142, 0.9),
-      rgba(0, 0, 0, 0.7)
+      rgba(18, 172, 142, 0.7)
     ),
     url("assets/header.jpg");
   background-position: center center;
   background-size: cover;
-  
+  background-repeat: no-repeat;
 }
 
+.nav__container {
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.nav__logo span {
+  color: var(--secondary-color);
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.link a {
+  padding: 0.5rem;
+  color: var(--primary-color-light);
+}
+
+.link a:hover {
+  color: var(--white);
+}
 
 .header__container {
   display: flex;
@@ -147,12 +140,12 @@ header {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
-.header__form input,select {
+.header__form input {
   padding: 1rem;
   outline: none;
   border: none;
   font-size: 1rem;
-  color: var(--primary-color-gray);
+  color: var(--primary-color);
   background-color: var(--primary-color-light);
   border-radius: 5px;
 }
@@ -409,8 +402,6 @@ header {
   color: var(--text-light);
 }
 
-/* footer section  */
-
 .footer {
   background-color: var(--primary-color-light);
 }
@@ -418,7 +409,7 @@ header {
 .footer__container {
   display: grid;
   grid-template-columns: 400px repeat(3, 1fr);
-  gap: 2=rem;
+  gap: 2rem;
 }
 
 .footer__col h3 {
@@ -426,7 +417,6 @@ header {
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--primary-color);
-  margin-left: 20px;
 }
 
 .footer__col h3 span {
@@ -438,7 +428,6 @@ header {
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--primary-color);
-  margin-left: 20px;
 }
 
 .footer__col p {
@@ -446,7 +435,6 @@ header {
   color: var(--text-dark);
   cursor: pointer;
   transition: 0.3s;
-  margin-left: 20px;
 }
 
 .footer__col p:hover {
@@ -562,179 +550,4 @@ header {
     flex-direction: column;
     gap: 1rem;
   }
-}
-
-
-/* video section */
-
-
-body
-{
-    background: #ffffff;
-}
-
-.wrapper {
-  background-color: #00c59e;
-  height: 100%;
-}
-
-li
-{
-    list-style: none;
-}
-
-.main
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 3.5%;
-    min-height: 70vh;
-}
-.title
-{
-    font-size: 20px;
-    font-weight: 600;
-    color: #000000;
-    text-align: left;
-    width: 100%;
-    margin-bottom: 10px;
-}
-.container
-{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    overflow: hidden;
-    /* border: 2px solid red; */
-}
-.container #main-Video
-{
-    position: relative;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    outline: none;
-}
-
-.playlistBx
-{
-    position: relative;
-    height: 100%;
-    margin: 0 10px 0 10px;
-    /* border: 2px solid green; */
-}
-.playlist
-{
-    position: absolute;
-    width: 100%;
-    height: calc(100% - 40px);
-    overflow-y: scroll;
-    border-top: 1px solid #dcdee1;
-}
-.playlist::-webkit-scrollbar
-{
-   width: 0px;
-}
-.playlistBx .row .AllLessons
-{
-   display: block;
-   text-align: left;
-   color: #000000;
-   font-size: 15px;
-   font-weight: 700;
-   margin-left: 40px;
-   line-height: 40px;
-}
-.playlist li
-{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   list-style: none;
-   color: #000000;
-   cursor: pointer;
-   border: 1px solid transparent;
-   padding: 15px 20px;
-   border-radius: 5px;
-}
-.playlist li:hover
-{
-    border: 0.5px solid #375666;
-}
-.playlist li .row span
-{
-    font-size: 15px;
-    font-weight: 400;
-    color: #000000;
-    text-decoration: none;
-    display: inline-block;
-    text-align: left;
-}
-.playlist li .row span::before
-{
-    content: '\f01d';
-    font-family: FontAwesome;
-    color: #000000;
-    margin-right: 15px;
-    font-size: 20px;
-}
-ul li.playing .row span::before
-{
-    content: '\f28c';
-    font-family: FontAwesome;
-    color: #fff;
-    margin-right: 15px;
-    font-size: 20px;
-}
-.playlist li.playing .row span
-{
-   color: #fff;
-}
-.playlist li span.duration
-{
-    font-size: 15px;
-    font-weight: 400;
-    display: inline-block;
-    color: #dcdee1;
-    text-align: right;
-}
-.playlist li.playing
-{
-   pointer-events: none;
-   background: #1d3541;
-   border: 0.5px solid #1d3541;
-}
-
-@media(max-width: 1092px){
-    section
-    {
-        padding: 30px 10px;
-    }
-    .container
-    {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        overflow: hidden;
-    }
-    .container #main-Video
-    {
-        height: 100%;
-    }
-    .playlistBx
-    {
-        height: 380px;
-        margin-top: 10px;
-    }
-    .playlist
-    {
-        position: absolute;
-        width: 100%;
-        height: calc(100% - 40px);
-        overflow-y: scroll;
-    }
 }
