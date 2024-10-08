@@ -1,4 +1,4 @@
-#Overview of the system
+Overview of the system
 
 ![HappyLife com - Google Chrome 2024-10-09 1_24_26 AM](https://github.com/user-attachments/assets/914d66f5-d37a-4734-9bf0-3323961e0e25)
 ![HappyLife com - Google Chrome 2024-10-09 1_24_13 AM](https://github.com/user-attachments/assets/a2354cb3-9fb1-4619-9e4d-9ab00b25359b)
