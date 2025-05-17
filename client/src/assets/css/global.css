@@ -1,0 +1,235 @@
+/* Global style */
+/* Base Styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: rgba(0, 0, 0, 0.85);
+  background-color: #f5f7fa;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Layout Components */
+.ant-layout {
+  min-height: 100vh;
+  background: #f5f7fa;
+}
+
+.ant-layout-header {
+  padding: 0 24px;
+  height: 64px;
+  line-height: 64px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+}
+
+.ant-layout-sider {
+  background: #fff;
+  box-shadow: 2px 0 8px 0 rgba(29, 35, 41, 0.05);
+}
+
+.ant-layout-content {
+  padding: 24px;
+  min-height: calc(100vh - 64px);
+}
+
+/* Navigation */
+.ant-menu {
+  border-right: none;
+}
+
+.ant-menu-item {
+  margin: 4px 0;
+}
+
+.ant-menu-item-selected {
+  font-weight: 500;
+}
+
+/* Cards */
+.ant-card {
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+}
+
+.ant-card:hover {
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.08);
+}
+
+/* Buttons */
+.ant-btn {
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.ant-btn-primary {
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02);
+}
+
+.ant-btn-primary:hover {
+  transform: translateY(-1px);
+}
+
+/* Forms */
+.ant-input, 
+.ant-select-selector, 
+.ant-picker, 
+.ant-input-number, 
+.ant-input-affix-wrapper {
+  border-radius: 6px !important;
+  transition: all 0.3s !important;
+}
+
+.ant-input:focus, 
+.ant-select-focused .ant-select-selector, 
+.ant-picker-focused {
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2) !important;
+}
+
+/* Tables */
+.ant-table {
+  border-radius: 8px;
+}
+
+.ant-table-thead > tr > th {
+  font-weight: 600;
+  background: #fafafa !important;
+}
+
+/* Alerts & Notifications */
+.ant-alert {
+  border-radius: 8px;
+}
+
+.ant-notification-notice {
+  border-radius: 8px;
+}
+
+/* Progress */
+.ant-progress-circle-path {
+  stroke-linecap: round;
+}
+
+/* Tabs */
+.ant-tabs-tab {
+  font-weight: 500;
+}
+
+/* Modal */
+.ant-modal-content {
+  border-radius: 8px;
+}
+
+/* Avatar */
+.ant-avatar {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06);
+}
+
+/* Tooltip */
+.ant-tooltip-inner {
+  border-radius: 6px;
+}
+
+/* Badge */
+.ant-badge-count {
+  box-shadow: 0 0 0 1px #fff;
+}
+
+/* Divider */
+.ant-divider-horizontal {
+  margin: 16px 0;
+}
+
+/* Empty States */
+.ant-empty {
+  margin: 32px 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .ant-layout-content {
+    padding: 16px;
+  }
+  
+  .ant-card {
+    border-radius: 0;
+  }
+}
+
+
+
+
+
+.location-button {
+  border-radius: 100%;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transform: scale(1);
+  background: transparent;
+  color: #e70605;
+  position: relative;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-button i {
+  font-size: 24px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Continuous pulse animation */
+@keyframes constantPulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.2); opacity: 0.8; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Ring pulse animation */
+@keyframes ringPulse {
+  0% { transform: scale(0.8); opacity: 0; }
+  40% { opacity: 0.4; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+
+.location-button:not(:disabled):not(.ant-btn-loading)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 100%;
+  background: rgba(231, 6, 5, 0.3);
+  animation: ringPulse 2s infinite linear;
+  z-index: 1;
+}
+
+.location-button:not(:disabled):not(.ant-btn-loading) {
+  animation: constantPulse 1.5s infinite ease-in-out;
+}
+
+.location-button:hover {
+  transform: scale(1.1);
+  animation: none;
+}
+
+.location-button:hover::before {
+  animation: ringPulse 1s infinite linear;
+}
+
+.location-button:active {
+  transform: scale(0.95);
+  animation: none;
+}
+
+.location-button:disabled {
+  color: rgba(231, 6, 5, 0.3);
+  animation: none;
+}
+
+.location-button:disabled::before {
+  display: none;
+}

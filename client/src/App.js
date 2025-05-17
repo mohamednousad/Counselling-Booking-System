@@ -1,11 +1,15 @@
-import './App.css';
+import React, { useEffect } from "react";
+import { MAINTENANCE_MODE } from "./config";
+import RoutesPage from "./routes";
 
 function App() {
-  return (
-    <div className="container">
-      <p>Hi</p>
-    </div>
-  );            
+  useEffect(() => {
+    if (MAINTENANCE_MODE) {
+      window.location.href = '/maintenance.html';
+    }
+  }, []);
+
+  return <RoutesPage />;
 }
 
 export default App;
