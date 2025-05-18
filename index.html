@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mental Health System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container nav-container">
+        <div class="logo">MindCare</div>
+        <div class="menu-toggle" id="menuToggle">☰</div>
+        <nav id="navbar">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#resources">Resources</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero" id="home">
+      <h1>Your Mental Wellness Starts Here</h1>
+      <p>
+        Confidential, compassionate, and professional support tailored to your
+        needs.
+      </p>
+      <a href="#assessment" class="btn">Take a Free Assessment</a>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>About MindCare</h2>
+        <p>
+          MindCare is a modern mental health platform dedicated to providing
+          accessible, affordable, and evidence-based support. We connect
+          individuals and families with licensed professionals, empowering them
+          to take control of their mental well-being.
+        </p>
+      </div>
+    </section>
+
+    <section class="how-it-works">
+      <div class="container">
+        <h2>How It Works</h2>
+        <div class="steps">
+          <div><strong>1.</strong> Sign Up Easily</div>
+          <div><strong>2.</strong> Complete a Brief Assessment</div>
+          <div><strong>3.</strong> Match with a Professional</div>
+          <div><strong>4.</strong> Begin Your Journey to Wellness</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <ul>
+          <li>Licensed Individual & Family Therapy</li>
+          <li>Teen & Adolescent Counseling</li>
+          <li>Interactive Self-Guided Programs</li>
+          <li>24/7 AI-Powered Chat Support</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="resources" id="resources">
+      <div class="container">
+        <h2>Helpful Resources</h2>
+        <ul>
+          <li>Managing Anxiety & Depression</li>
+          <li>Daily Mindfulness Practices</li>
+          <li>The Benefits of Regular Therapy</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="assessment">
+      <div class="container">
+        <h2>Not Sure Where to Start?</h2>
+        <a href="#" class="btn">Take a 3-Minute Self-Check</a>
+      </div>
+    </section>
+
+    <footer class="footer" id="contact">
+      <div class="container">
+        <p>
+          &copy; 2025 MindCare. All rights reserved. | Privacy Policy | Terms of
+          Service
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      const toggle = document.getElementById('menuToggle')
+      const navbar = document.getElementById('navbar')
+      const navLinks = navbar.querySelectorAll('a')
+
+      toggle.addEventListener('click', () => {
+        navbar.classList.toggle('active')
+      })
+
+      navLinks.forEach((link) => {
+        link.addEventListener('click', () => {
+          navbar.classList.remove('active')
+        })
+      })
+    </script>
+  </body>
+</html>
