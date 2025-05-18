@@ -30,7 +30,7 @@ steps:
 
   - Step 7: Push the branch to GitHub  
     ```sh
-    git push origin feature-branch
+    git push origin feature/your-branch-name
     ```
 
   - Step 8: Create a Pull Request (PR) to `develop` on GitHub  
