@@ -5,6 +5,7 @@ import { Spin } from "antd";
 const Test = lazy(() => import("../views/Test"));
 const NotFound = lazy(() => import("../views/NotFound"));
 const Home = lazy(() => import("../views/appViews/Home"));
+const Booking = lazy(() => import("../views/appViews/Booking"));
 
 const RoutesPage = () => (
   <Router>
@@ -28,6 +29,7 @@ const RoutesPage = () => (
     >
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/booking" element={<Booking />} />
         <Route path="/test" element={<Test />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
