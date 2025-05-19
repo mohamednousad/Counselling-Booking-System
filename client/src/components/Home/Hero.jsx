@@ -8,7 +8,7 @@ const Hero = () => {
         Confidential, compassionate, and professional support tailored to your
         needs.
       </p>
-      <a href="#assessment" class="btn">Take a Free Assessment</a>
+      <a href="#assessment" class="btn">Book appointment</a>
     </section>
 
   );
