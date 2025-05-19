@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a Consultation</title>
+    <link rel="stylesheet" href="booking.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h2>Book a Consultation</h2>
+      <p class="subtitle">
+        Fill the form below to schedule your appointment with our counselor
+      </p>
+
+      <form class="booking-form">
+        <label>First Name</label>
+        <input type="text" name="firstName" required />
+
+        <label>Last Name</label>
+        <input type="text" name="lastName" required />
+
+        <label>National Identity Card</label>
+        <input type="text" name="nid" required />
+
+        <label>Email</label>
+        <input type="email" name="email" required />
+
+        <label>Type of Consultant</label>
+        <select name="consultant" required>
+          <option value="">Select</option>
+          <option value="">Counselor</option>
+          <option value="therapist">Therapist</option>
+        </select>
+
+        <label>Level of Psychology</label>
+        <select name="level" required>
+          <option value="">Select</option>
+          <option value="mild">Mild</option>
+          <option value="moderate">Moderate</option>
+          <option value="severe">Severe</option>
+        </select>
+
+        <label>Description</label>
+        <textarea name="description" rows="4" required></textarea>
+
+        <button type="submit">Book Appointment</button>
+      </form>
+    </main>
+  </body>
+</html>
