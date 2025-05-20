@@ -7,6 +7,7 @@ const NotFound = lazy(() => import('../views/NotFound'))
 const Home = lazy(() => import('../views/appViews/Home'))
 const Booking = lazy(() => import('../views/appViews/Booking'))
 const Login = lazy(() => import('../views/appViews/Login'))
+const Register = lazy(() => import('../views/appViews/Register'))
 
 const RoutesPage = () => (
   <Router>
@@ -32,6 +33,7 @@ const RoutesPage = () => (
         <Route path='/' element={<Home />} />
         <Route path='/booking' element={<Booking />} />
         <Route path='/login' element={<Login />} />
+        <Route path='/register' element={<Register />} />
         <Route path='/test' element={<Test />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
