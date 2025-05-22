@@ -1,3 +1,4 @@
+// import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -10,14 +11,12 @@ const Hero = () => {
           Confidential, compassionate, and professional support tailored to your
           needs.
         </p>
-        {/* <Link to="/booking"> */}
         <a
           href="/booking"
           className="bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-8 rounded-full transition duration-300 inline-block"
         >
           Book appointment
         </a>
-        {/* </Link> */}
       </div>
     </section>
   );
