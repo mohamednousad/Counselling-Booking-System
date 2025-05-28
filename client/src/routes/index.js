@@ -5,8 +5,8 @@ import { Spin } from "antd";
 const Test = lazy(() => import("../views/Test"));
 const NotFound = lazy(() => import("../views/NotFound"));
 const Home = lazy(() => import("../views/appViews/Home"));
-const Login = lazy(() => import("../views/appViews/Login"));
-const Register = lazy(() => import("../views/appViews/Register"));
+const Login = lazy(() => import("../views/authViews/Login"));
+const Register = lazy(() => import("../views/authViews/Register"));
 const Booking = lazy(() => import("../views/appViews/Booking"));
 
 const RoutesPage = () => (

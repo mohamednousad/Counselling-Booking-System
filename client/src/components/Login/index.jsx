@@ -47,7 +47,7 @@ export default function Login() {
           type='submit'
           className='w-full bg-green-700 text-white py-2 px-4 rounded-lg hover:bg-green-800 transition duration-300 cursor-pointer'
         >
-          Log In
+          Sign In
         </button>
            <Link to='/register' className='text-sm text-green-700 hover:underline'>
             Don't have an account?

@@ -35,7 +35,13 @@ const Navbar = () => {
               to="/login"
               className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition"
             >
-              Log In
+              Sign In
+            </Link>
+             <Link
+              to="/dashbaord"
+              className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition"
+            >
+              Dashboard
             </Link>
           </div>
         </nav>
