@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-class CrudService {
+className CrudService {
   constructor(Model) {
     this.Model = Model;
   }

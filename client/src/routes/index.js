@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import { Spin } from "antd";
+// import UserDashboardPage from "../views/appViews/UserDashboard";
 
 const Test = lazy(() => import("../views/Test"));
 const NotFound = lazy(() => import("../views/NotFound"));
@@ -8,6 +9,7 @@ const Home = lazy(() => import("../views/appViews/Home"));
 const Login = lazy(() => import("../views/authViews/Login"));
 const Register = lazy(() => import("../views/authViews/Register"));
 const Booking = lazy(() => import("../views/appViews/Booking"));
+const UserDashboard = lazy(() => import("../views/appViews/UserDashboard"));
 
 const RoutesPage = () => (
   <Router>
@@ -34,6 +36,7 @@ const RoutesPage = () => (
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/booking" element={<Booking />} />
+        <Route path="/dashbaord" element={<UserDashboard />} />
         <Route path="/test" element={<Test />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

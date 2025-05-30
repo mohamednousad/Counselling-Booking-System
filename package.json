@@ -7,6 +7,8 @@
     "client": "cd client && npm start",
     "server": "cd server && npm start",
     "install": "cd server && npm install && cd ../client && npm install"
-
+  },
+  "dependencies": {
+    "react-icons": "^5.5.0"
   }
 }
